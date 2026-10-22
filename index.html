@@ -756,7 +756,7 @@ function settings(){
   document.getElementById("planinfo").textContent=`Plan ${fmtD(STUDY[0]||START_ISO)} tarihinde başlıyor${shifted?" (kaydırılmış)":""} · ${STUDY.length} çalışma günü · son gün ${fmtD(STUDY[STUDY.length-1]||START_ISO)}.`;
   document.getElementById("restart").onclick=restart;
   const st=SYNC.status(), ago=st.at?Math.round((Date.now()-st.at)/6e4):null;
-  document.getElementById("syncinfo").textContent=st==="off"?"":st.state==="offline"?"Eşitleme: çevrimdışı · internet gelince otomatik eşitlenir.":st.state==="error"&&!st.at?"Eşitleme: henüz yapılamadı.":
+  document.getElementById("syncinfo").textContent=st==="off"?"Misafir kopyası: ilerleme sadece bu cihazda tutulur, hiçbir yere gönderilmez.":st.state==="offline"?"Eşitleme: çevrimdışı · internet gelince otomatik eşitlenir.":st.state==="error"&&!st.at?"Eşitleme: henüz yapılamadı.":
     `Eşitleme açık · tüm cihazların aynı ilerlemeyi görür · son eşitleme ${ago===null?"—":ago<1?"az önce":ago+" dk önce"}.`;
 }
 function renderAll(){
