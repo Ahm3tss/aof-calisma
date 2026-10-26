@@ -1,0 +1,1 @@
+{"name": "AÖF Çalışma", "short_name": "AÖF", "start_url": "index.html", "scope": "./", "display": "standalone", "background_color": "#dfe8ea", "theme_color": "#dfe8ea", "lang": "tr", "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}]}
